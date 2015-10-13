@@ -1,0 +1,363 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+/* background setup */
+.background {
+    background-repeat:no-repeat;
+    /* custom background-position */
+    background-position:50% 50%;
+    /* ie8- graceful degradation */
+    background-position:50% 50%\9 !important;
+}
+
+/* fullscreen setup */
+html, body {height:100%;}
+.fullscreen,
+.content-a {width:100%;min-height:100%;}
+.not-fullscreen,
+.not-fullscreen .content-a,
+.fullscreen.not-overflow,
+.fullscreen.not-overflow .content-a {height:100%;overflow:hidden;}
+
+/* content centering styles */
+.content-a {display:table;}
+.content-b {display:table-cell;position:relative;vertical-align:middle;text-align:center;}
+
+/* visual styles */
+body{margin:0;text-align:center;font-family: "Open Sans",sans-serif;}
+section {background:#fff;}
+.not-fullscreen {height:auto;}
+
+/* custom */
+.content-b i{
+	padding-top: 5%;
+	padding-bottom: 2%;
+	display: block;
+	font-size: 5em;
+	font-size: 6vw;
+	color: #ff2d55;
+}
+
+.content-b h1 {
+	letter-spacing: 0.3em;
+	text-transform: uppercase;
+	font-size: 6em;
+	font-size: 6vw;
+	font-weight: 500;
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+	line-height: 1em;
+	color:#fff;
+}
+.content-b span{
+	font-size: 0.7em;
+	font-size: 4.5vw;
+}
+
+.content-b h2,h3,h4,h5,h6{
+	font-weight: 300;
+	letter-spacing: 0.09em;
+	font-size: 24px;
+	font-size: 2vw;
+	display: block;
+	padding-right: 10%;
+	padding-left: 10%;
+	margin: 0px;
+	text-transform: uppercase;
+}
+.content-b h2{color: #666;padding-bottom: 5%;}
+.content-b h3{color: #fff;padding-bottom: 5%;padding-top: 5%;}
+.content-b h4{color: #fff;text-shadow: 1px 1px rgba(0, 0, 0, 0.4);padding-top: 5%;padding-bottom: 2%;text-transform: uppercase;}
+.content-b h5{color: #666;padding-bottom: 5%;}
+.content-b h6{color: #ff2d55;padding-bottom: 5%;}
+
+.content-b .btn{
+	border: 1px solid #FFF;
+	color: #FFF;
+	font-size: 1em;
+	font-size: 1vw;
+	font-family: "Open Sans";
+	font-weight: 600;
+	line-height: 22px !important;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: 3px;
+	transition: all 200ms linear 0s;
+	padding-top: 1.2%;
+	padding-right: 2%;
+	padding-bottom: 1.2%;
+	padding-left: 2%;
+	text-decoration: none;
+	display: block;
+	margin-top: 1%;
+	margin-bottom: 5%;
+	max-width: 180px;
+	margin-right: auto;
+	margin-left: auto;
+	text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+}
+.content-b .btn:hover{
+	color: #212729;
+	background-color: #fff;
+	text-shadow: 0px 0px rgba(0, 0, 0, 0.0);
+}
+
+
+.content-b #service{
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	font-weight: 300;
+	letter-spacing: 0.09em;
+	font-size: 24px;
+	font-size: 2vw;
+	color: #4A575C;
+}
+.content-b #service div{
+	float: left;
+	height: 80%;
+	width: 33.3%;
+	margin-bottom: 5%;
+	text-transform: uppercase;
+}
+
+
+
+
+
+#map-canvas {width: 100%;height: 400px;}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (max-width: 35em) {
+
+.content-b i{
+	font-size: 22vw;
+}
+.content-b h1 {
+	font-size: 14vw;
+}
+.content-b span{
+	font-size: 10vw;
+}
+.content-b h2,h3,h4,h5,h6{
+	font-size: 6.5vw;
+}
+.content-b .btn{font-size: 3vw;padding-top: 3%;padding-right: 2.5%;padding-bottom: 3%;padding-left: 2.5%;}
+
+.content-b #service{
+	width: 100%;
+
+}
+.content-b #service div{
+	clear:left;width: 100%;
+}
+
+.content-b #service{
+font-size: 6.5vw;
+}
+}
+
+@media only screen and (min-width: 35em) {}
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+		   
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
